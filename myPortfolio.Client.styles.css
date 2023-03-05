@@ -1,0 +1,263 @@
+/* /Shared/MainLayout.razor.rz.scp.css */
+:root[b-c9z80he36a] {
+    --orange-color: #297F87;
+    --dark-blue-color: #0D4C92;
+    --light-green-color: #59C1BD;
+    --light-color: #A0E4CB;
+    --lightes-green-color: #CFF5E7;
+}
+
+
+*[b-c9z80he36a],
+*[b-c9z80he36a]::after,
+*[b-c9z80he36a]::before {
+    box-sizing: border-box;
+}
+
+body[b-c9z80he36a] {
+    margin: 0;
+    font-family: "Poopins", sans-serif;
+}
+
+.wrapper[b-c9z80he36a] {
+    max-width: 1134px;
+    margin: 0 auto;
+}
+
+
+.btn[b-c9z80he36a] {
+    padding: 16px 32px;
+    border-radius: 24px;
+    color: #fff;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+    position: relative;
+}
+
+    .btn.dark[b-c9z80he36a] {
+        background-color: #0D4C92;
+        transition: all 0.3s ease;
+    }
+
+        .btn.dark:hover[b-c9z80he36a] {
+            transform: scale(1.1);
+        }
+
+    .btn.light[b-c9z80he36a] {
+        background: var(--orange-color);
+    }
+
+    .btn.enrol-icon[b-c9z80he36a]::before {
+        content: url("images/enrol-now-icon.svg");
+        position: absolute;
+        top: 50%;
+        left: 32px;
+        transform: translateY(-50%);
+    }
+
+    .btn.enrol-icon[b-c9z80he36a] {
+        padding-left: 60px;
+    }
+
+
+
+header[b-c9z80he36a] {
+    background: linear-gradient(180deg, #A0E4CB 0%, #0D4C92 100%);
+    height: 100vh;
+    width: 100%;
+}
+
+nav[b-c9z80he36a] {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 1134px;
+    top: 0;
+    padding: 36px 0;
+    z-index: 100;
+    transition: all 500ms ease;
+}
+
+    nav.scrolled[b-c9z80he36a] {
+        background-color: #181D31;
+        box-shadow: 0 16px 14px -8px rgba(0, 0, 0, 0.3);
+        border-radius: 0 0 8px 8px;
+        top: 0;
+        padding: 12px;
+    }
+
+        nav.scrolled a[b-c9z80he36a] {
+            color: white;
+        }
+
+        nav.scrolled .logo[b-c9z80he36a] {
+            color: white;
+        }
+
+    nav .logo[b-c9z80he36a] {
+        font-family: "Raleway", sans-serif;
+        font-weight: 900;
+        font-size: 40px;
+        color: #161D6F;
+    }
+
+    nav ul[b-c9z80he36a] {
+        display: flex;
+        align-items: center;
+        gap: 60px;
+        list-style: none;
+        margin: 0;
+    }
+
+        nav ul li a[b-c9z80he36a] {
+            font-weight: bold;
+            font-size: 16px;
+            color: #003638;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+ul li[b-c9z80he36a] {
+    transition: all 0.3s ease;
+}
+
+    ul li:hover[b-c9z80he36a] {
+        transform: scale(1.1);
+        cursor: pointer;
+    }
+
+.hero-section[b-c9z80he36a] {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 60px;
+    position: relative;
+    color: #fff;
+}
+
+    .hero-section .left h1[b-c9z80he36a] {
+        font-family: "Raleway", sans-serif;
+        font-weight: 900;
+        font-size: 50px;
+        line-height: 125%;
+        margin-bottom: 0;
+        background: linear-gradient(82deg,#594ae2 0%,#FF7000 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .hero-section .left p[b-c9z80he36a] {
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 200%;
+        margin-bottom: 30px;
+        width: 457px;
+    }
+
+    .hero-section .left[b-c9z80he36a] {
+        flex: 1;
+        top: 30px;
+    }
+
+    .hero-section .right[b-c9z80he36a] {
+        align-self: flex-end;
+    }
+
+        .hero-section .right img[b-c9z80he36a] {
+            height: 650px;
+            vertical-align: middle;
+        }
+
+section .work-experiences[b-c9z80he36a] {
+    display: flex;
+    gap: 100px;
+    align-items: center;
+}
+
+section[b-c9z80he36a] {
+    margin-top: 100px;
+}
+
+.work-card[b-c9z80he36a] {
+    border-radius: 30px;
+    padding: 10px;
+    background-color: #DEF5E5;
+    border-style: dashed;
+    border-color: black;
+    color: #2C3333;
+    border-width: 3px;
+    transition: all 0.3s ease;
+}
+
+    .work-card:hover[b-c9z80he36a] {
+        transform: scale(1.2);
+        cursor: pointer;
+    }
+/* /Shared/NavMenu.razor.rz.scp.css */
+.navbar-toggler[b-g190u99ivd] {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.top-row[b-g190u99ivd] {
+    height: 3.5rem;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.navbar-brand[b-g190u99ivd] {
+    font-size: 1.1rem;
+}
+
+.oi[b-g190u99ivd] {
+    width: 2rem;
+    font-size: 1.1rem;
+    vertical-align: text-top;
+    top: -2px;
+}
+
+.nav-item[b-g190u99ivd] {
+    font-size: 0.9rem;
+    padding-bottom: 0.5rem;
+}
+
+    .nav-item:first-of-type[b-g190u99ivd] {
+        padding-top: 1rem;
+    }
+
+    .nav-item:last-of-type[b-g190u99ivd] {
+        padding-bottom: 1rem;
+    }
+
+    .nav-item[b-g190u99ivd]  a {
+        color: #d7d7d7;
+        border-radius: 4px;
+        height: 3rem;
+        display: flex;
+        align-items: center;
+        line-height: 3rem;
+    }
+
+.nav-item[b-g190u99ivd]  a.active {
+    background-color: rgba(255,255,255,0.25);
+    color: white;
+}
+
+.nav-item[b-g190u99ivd]  a:hover {
+    background-color: rgba(255,255,255,0.1);
+    color: white;
+}
+
+@media (min-width: 641px) {
+    .navbar-toggler[b-g190u99ivd] {
+        display: none;
+    }
+
+    .collapse[b-g190u99ivd] {
+        /* Never collapse the sidebar for wide screens */
+        display: block;
+    }
+}
